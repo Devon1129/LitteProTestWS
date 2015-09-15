@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">LittePro_CurrencyConversion</string>
+    <string name="dollars">美金現值: </string>
+    <string name="JPY">日幣現值: </string>
+    <string name="HK">港幣現值: </string>
+    <string name="sterling">英鎊現值: </string>
+    <string name="euro">歐元現值: </string>
+    <string name="remind">請輸入數字</string>
+    <string name="enterMumber">請勿輸入非數字的字元</string>
+    <string name="ok">確定</string>
+    <string name="results"></string>
+
+</resources>

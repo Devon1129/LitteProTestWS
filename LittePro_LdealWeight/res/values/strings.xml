@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">LittePro_LdealWeight</string>
+    <string name="height">請輸入身高</string>
+    <string name="weight">請輸入體重</string>
+    <string name="sex">請選擇性別</string>
+    <string name="male">男性</string>
+    <string name="female">女性</string>
+    <string name="determine">確定</string>
+    <string name="leave">離開</string>
+    <string name="hello">歡迎使用</string>
+
+</resources>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">LittePro_ClinicRegistered</string>
+    <string name="message">資訊</string>
+    <string name="name">姓名:</string>
+    <string name="sex">性別:</string>
+    <string name="divisions">科別:</string>
+    <string name="doctors">醫師:</string>
+    <string name="clinicTime">門診時段:</string>
+    <string name="determine">確定</string>
+    <string name="leave">離開</string>
+    
+    <string-array name="spnSex">
+        <item>先生</item>
+        <item>小姐</item>
+    </string-array>
+    
+    <string-array name="spnDivisions">
+        <item>內科</item>
+        <item>外科</item>
+        <item>婦產科</item>
+    </string-array>
+    
+</resources>

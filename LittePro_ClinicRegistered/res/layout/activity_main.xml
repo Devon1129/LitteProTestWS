@@ -1,0 +1,92 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_gravity="center_horizontal">
+        <TableRow>
+            <TextView 
+                android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:text="@string/name"/>
+            <EditText
+                android:id="@+id/etIdName"
+                android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:hint=""/>
+
+            <TextView 
+                android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:text="@string/sex"/>
+			<Spinner
+			    android:id="@+id/spnIdSex"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:entries="@array/spnSex" />
+            
+        </TableRow>
+
+        <TableRow>
+           <TextView 
+               android:layout_width="wrap_content"
+	     		android:layout_height="wrap_content"
+	     		android:text="@string/divisions"/>
+	         <Spinner
+			    android:id="@+id/spnIdDivisions"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:entries="@array/spnDivisions" />
+			    
+	         <TextView 
+	            android:layout_width="wrap_content"
+	     		android:layout_height="wrap_content"
+	     		android:text="@string/doctors"/>
+			<Spinner
+			    android:id="@+id/spnIdDoctor"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content" />
+	
+		</TableRow>
+		
+		<TableRow>
+             <TextView 
+	            android:layout_width="wrap_content"
+	     		android:layout_height="wrap_content"
+	     		android:text="@string/clinicTime"/>
+			<Spinner
+			    android:id="@+id/spnIdClinicTime"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content" />
+	
+		</TableRow>
+       
+    </TableLayout>
+    
+     <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/message" />
+
+     <LinearLayout
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_gravity="center"
+         android:orientation="horizontal" >
+		<Button 
+		    android:id="@+id/btnDetermine"
+		    android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/determine"/>
+		<Button 
+		    android:id="@+id/btnLeave"
+		    android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/leave"/>
+     </LinearLayout>
+
+</LinearLayout>
