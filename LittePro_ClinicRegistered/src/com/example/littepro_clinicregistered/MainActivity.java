@@ -55,7 +55,7 @@ public class MainActivity extends Activity {
     	btnLeave.setOnClickListener(LeaveListener);
     }
     
-//    private String[] doctors = {"¥Oª°¨R", "¥ô¬Õ¬Õ", "·¨¹L", "¤pÀs¤k", "³¢¹t", "¶À»T"};
+//    private String[] doctors = {"ä»¤ç‹æ²–", "ä»»ç›ˆç›ˆ", "æ¥Šé", "å°é¾å¥³", "éƒ­é–", "é»ƒè“‰"};
     private OnItemSelectedListener spnSexListener = new OnItemSelectedListener(){
 
 		@Override
