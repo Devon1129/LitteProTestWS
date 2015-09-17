@@ -10,14 +10,16 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
+import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends Activity {
 	private EditText etName;
+	private TextView tvMsg;
 	private Spinner spnSex, spnDivision, spnDoctor, spnClinicTime;
 	private Button btnDetermine,btnLeave;
-	private String[] doctors = {"¥Oª°¨R", "¥ô¬Õ¬Õ", "·¨¹L", "¤pÀs¤k", "³¢¹t", "¶À»T"};
+	String stClinicRg, msg;
 	
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,11 +30,11 @@ public class MainActivity extends Activity {
     
     private void buildViews(){
     	etName = (EditText)findViewById(R.id.etIdName);
+    	tvMsg = (TextView)findViewById(R.id.tvMsg);
     	
     	spnSex = (Spinner)findViewById(R.id.spnIdSex);
     	ArrayAdapter<CharSequence> adSexList = ArrayAdapter.createFromResource(
     			this, R.array.spnSex, android.R.layout.simple_spinner_dropdown_item);
-    	adSexList.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
     	spnSex.setAdapter(adSexList);
     	spnSex.setOnItemSelectedListener(spnSexListener);
     	
@@ -40,7 +42,6 @@ public class MainActivity extends Activity {
     	spnDivision = (Spinner)findViewById(R.id.spnIdDivisions);
     	ArrayAdapter<CharSequence> adDivisionList = ArrayAdapter.createFromResource(
     			this, R.array.spnDivisions, android.R.layout.simple_spinner_dropdown_item);
-    	adDivisionList.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
     	spnDivision.setAdapter(adDivisionList);
     	spnDivision.setOnItemSelectedListener(spnDivisionListener);
     	
@@ -48,17 +49,28 @@ public class MainActivity extends Activity {
     	spnClinicTime = (Spinner)findViewById(R.id.spnIdClinicTime);
     	
     	btnDetermine = (Button)findViewById(R.id.btnDetermine);
-    	btnLeave = (Button)findViewById(R.id.btnLeave);
     	btnDetermine.setOnClickListener(determineListener);
+    	
+    	btnLeave = (Button)findViewById(R.id.btnLeave);
     	btnLeave.setOnClickListener(LeaveListener);
     }
     
+//    private String[] doctors = {"¥Oª°¨R", "¥ô¬Õ¬Õ", "·¨¹L", "¤pÀs¤k", "³¢¹t", "¶À»T"};
     private OnItemSelectedListener spnSexListener = new OnItemSelectedListener(){
 
 		@Override
 		public void onItemSelected(AdapterView<?> parent, View view,
 				int position, long id) {
 			// TODO Auto-generated method stub
+//			Toast.makeText(MainActivity.this, ""+id, Toast.LENGTH_SHORT).show();
+//			Toast.makeText(MainActivity.this, 
+//					parent.getItemAtPosition(position).toString(), 
+//					Toast.LENGTH_SHORT).show();
+			stClinicRg = parent.getSelectedItem().toString();
+			
+//			String Name = etName.getText().toString();
+//			tvMsg.setText(Name + stClinicRg);
+			
 			
 		}
 
@@ -94,8 +106,11 @@ public class MainActivity extends Activity {
 
 		@Override
 		public void onClick(View v) {
-			// TODO Auto-generated method stub
+//			String Name = etName.getText().toString();
+//			tvMsg.setText(Name);
 			
+			String Name = etName.getText().toString();
+			tvMsg.setText(Name + stClinicRg);
 		}
     	
     };
@@ -104,7 +119,7 @@ public class MainActivity extends Activity {
 
 		@Override
 		public void onClick(View v) {
-			// TODO Auto-generated method stub
+			finish();
 			
 		}
     	
