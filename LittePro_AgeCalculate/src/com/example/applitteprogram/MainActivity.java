@@ -20,7 +20,7 @@ public class MainActivity extends Activity {
 	private Button btnResult;
 	private Test test;
 	private String msg;
-	private int result;
+//	private int result;
 	private int[] MMdate = {0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
 
     @Override
