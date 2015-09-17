@@ -19,7 +19,7 @@
             android:id="@+id/etIdHeight"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:numeric="decimal"
+            android:inputType="numberDecimal"
             android:hint="" />
     </LinearLayout>
 
@@ -53,27 +53,30 @@
 	        android:layout_height="wrap_content"
 	        android:text="@string/sex"   />  
      
-	    <RadioGroup
+   
+      <RadioGroup
 	        android:id="@+id/rgIdSex"
 	        android:layout_width="wrap_content"
 	        android:layout_height="wrap_content" 
-	        android:checkedButton="@+id/cbIdMale"
+	        android:checkedButton="@+id/rbIdMale"
 	        android:orientation="horizontal" >
+  
 	
 	        <RadioButton
 	            android:id="@+id/rbIdMale"
 	            android:layout_width="wrap_content"
-	            android:layout_height="wrap_content"
-	            android:checked="true"
+	            android:layout_height="wrap_content"	        
 	            android:text="@string/male" />
 	
 	        <RadioButton
 	            android:id="@+id/rbIdFemale"
 	            android:layout_width="wrap_content"
-	            android:layout_height="wrap_content"
+	            android:layout_height="wrap_content" 
+	            android:checked="true"            
 	            android:text="@string/female" />
-	
+		   
 	    </RadioGroup>
+	   
     
 </LinearLayout>
 
@@ -85,7 +88,7 @@
         android:text="@string/hello" />
 
     <TableLayout
-        android:layout_width="match_parent"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content" 
         android:gravity="center">
 
@@ -93,16 +96,18 @@
 				android:layout_width="match_parent"
 		        android:layout_height="wrap_content" 
 		        android:gravity="center">
-	            <Button 
+	            <Button
+	                style="?android:attr/buttonBarButtonStyle" 
 	                android:id="@+id/btnDetermine"
 					android:layout_width="wrap_content"
 	        		android:layout_height="wrap_content"
 	        		android:text="@string/determine" />
 				<Button 
+				    style="?android:attr/buttonBarButtonStyle"
 	                android:id="@+id/btnLeave"
 					android:layout_width="wrap_content"
 	        		android:layout_height="wrap_content"
-	        		android:text="@string/leave" />"
+	        		android:text="@string/leave" />
         </TableRow>
         
     </TableLayout>
