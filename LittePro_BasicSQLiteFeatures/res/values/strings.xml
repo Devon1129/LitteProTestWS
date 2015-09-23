@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">LittePro_BasicSQLiteFeatures</string>
+    <string name="Title">點選 MENU可新增、修改、刪除</string>
+    
+   
+
+</resources>
