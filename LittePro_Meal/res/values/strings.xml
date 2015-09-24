@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">LittePr_UseAlertDialog</string>
+    <string name="hello">歡迎光臨蟹堡王</string>
+    <string name="enter">進入點餐系統</string>
+    <string name="show">您點的餐點有:</string>
+
+</resources>
