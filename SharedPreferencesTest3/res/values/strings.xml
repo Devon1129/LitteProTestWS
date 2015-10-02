@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SharedPreferencesTest3</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="user_name">User Name</string>
+    <string name="password">Password</string>
+    <string name="save">Save</string>
+    <string name="go_to_b">Go to B</string>
+    <string name="load">Load</string>
+    <string name="previous">Previous</string>
+
+</resources>
