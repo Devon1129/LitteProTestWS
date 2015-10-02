@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">UseSharedPreference</string>
+    <string name="result">可兌換美金</string>
+    <string name="exchangeRate">匯率</string>
+    <string name="NT">台幣</string>
+    <string name="calculate">計算 台幣兌換美金</string>
+    
+ 
+</resources>
