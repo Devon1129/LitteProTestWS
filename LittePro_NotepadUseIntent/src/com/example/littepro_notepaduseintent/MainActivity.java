@@ -34,10 +34,10 @@ public class MainActivity extends ListActivity {
     }
     
     private void addArrayListEnterListView(){
-    	mListview = getListView();//extends ListActivity��神瘜�ML��神瘜���撖急��� 
+    	mListview = getListView();//extends ListActivity的寫法，XML的寫法也應更改寫法。
     	mMapAry = new ArrayList<Map<String, Object>>();
     	
-    	//撠��� ArrayList鋆�
+    	//將數據加到 ArrayList裡
     	for(int i = 0; i < mType.length; i++){
     		Map<String, Object> items = new HashMap<String, Object>();
     		items.put(Constants.TYPE_KEY, mType[i]);
@@ -45,22 +45,22 @@ public class MainActivity extends ListActivity {
     		mMapAry.add(items);
     	}
     	
-    	//�� adapter����
+    	//利用 adapter配對後，呈現畫面
     	mAdapter = new SimpleAdapter(this, mMapAry, R.layout.listview_row,
     			new String[]{Constants.TYPE_KEY, Constants.TITLE_KEY},
     			new int[]{R.id.textView1, R.id.textView2});
     	
-    	//撠��末��� adapter閮剔策 mListview 
+    	
     	mListview.setAdapter(mAdapter);
     }
    
-    //ListActivity��� method. 
-    //���� extends ListActivity��蝙�
-    //ListView暺��������
+    //ListActivity的 method. 
+    //搭配 extends ListActivity時使用
+    //ListView點擊項目時的反應
 	@Override
 	protected void onListItemClick(ListView l, View v, int position, long id) {
 		super.onListItemClick(l, v, position, id);
-		//撠� position(雿蔭)��嚗霈隞� code雿輻
+		// 將 position(位置)抓出，可讓其他 code使用
 		mSelectedPosition = position;
 		
 		Intent intent = new Intent();
@@ -77,8 +77,6 @@ public class MainActivity extends ListActivity {
 		startActivityForResult(intent, 0);
 
 	}
-
-
 	
 	@Override
 	protected void onActivityResult(int requestCode, int resultCode, Intent data) {
